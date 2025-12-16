@@ -11,14 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class=" ">
     <header>
-        <nav class="nav-container max-auto p-5 md:flex justify-between items-center space-y-3">
+        <nav class="nav-container bg-[#edf6ff] p-2 md:py-10 md:px-20 md:flex justify-between items-center space-y-3">
 
             <div class="logo flex justify-center items-center">
                 <h1 class="font-semibold text-2xl">English</h1>
                 <figure>
-                    <img class="" src="./assets/logo.png" alt="">
+                    <img class="w-[40px] h-[40px]" src="./assets/logo.png" alt="">
                 </figure>
                 <h2 class="font-semibold text-2xl">জানালা</h2>
             </div>
@@ -40,7 +40,31 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="banner md:py-10 md:px-20 md:flex justify-between items-center p-10">
+
+            <div class="info">
+                <h1 class="font-bold text-2xl"><span class="text-[#0db8f4] ">English</span> is Easy!!</h1>
+                <p class="text-gray-500 py-3 ">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>
+                    আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+                <input type="text" placeholder="Enter your name" class="my-2 px-2 outline-none border-gray-300" />
+                <br>
+                <div>
+                    <input type="password" class="px-2 mt-2 border-gray-300 outline-none validator" required placeholder="Password" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must be more than 8 characters, including number, lowercase letter, uppercase letter" />
+                </div>
+                <br>
+                <button class="btn btn-primary">Get started</button>
+            </div>
+
+            <div class="profile">
+                <figure>
+                    <img class=" md:w-[534px] md:h-[420px]" src="./assets/hero-student.png" alt="">
+                </figure>
+            </div>
+        </section>
+    </main>
 
 
     <script src="./script/script.js"></script>
