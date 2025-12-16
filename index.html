@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Janala</title>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <header>
-        <h1>hello</h1>
+        <nav class="nav-container max-auto p-5 md:flex justify-between items-center space-y-3">
+
+            <div class="logo flex justify-center items-center">
+                <h1 class="font-semibold text-2xl">English</h1>
+                <figure>
+                    <img class="" src="./assets/logo.png" alt="">
+                </figure>
+                <h2 class="font-semibold text-2xl">জানালা</h2>
+            </div>
+
+
+            <div class="nav-btn flex gap-3">
+                <button class="btn btn-outline btn-primary">
+                    <img src="./assets/fa-circle-question.png" alt="">
+                    FAQ
+                </button>
+                <button class="btn btn-outline btn-primary">
+                    <img src="./assets/fa-book-open.png" alt="">
+                    Learn
+                </button>
+                <button class="btn btn-outline btn-primary">
+                    <img class="" src="./assets/fa-arrow-right-from-bracket.png" alt="">
+                    Logout
+                </button>
+            </div>
+        </nav>
     </header>
     <main></main>
 
 
     <script src="./script/script.js"></script>
 </body>
+
 </html>
